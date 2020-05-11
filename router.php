@@ -38,4 +38,25 @@
                       
            
             
+        break;        
+        case 'admin':   //ACCESO PARA EL ADMINISTRADOR
+
+                //MUESTRA LOS FORMULARIOS
         break;
+
+        case 'altaprod':    //Alta a nuevo producto
+           
+           
+        break;
+
+        case 'altaItem':  //Alta a nuevo rubro
+           
+           
+        break;
+
+
+         default: 
+        
+            
+        break;
+    }
