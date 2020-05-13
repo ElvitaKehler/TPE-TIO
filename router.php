@@ -16,26 +16,33 @@
 
     // decide que camino tomar según TABLA DE RUTEO
     switch ($parametros[0]) {
-        case 'insertar':
-            
-        break;
+        
         case 'listar': // /lista los productos   ->   showProd()
+            echo 'listar';
             // instanciando un objeto de la clase ProdController
+          //  $controller = new ProductController();
+           // $controller->showProducts();
             
         break;
 
         case 'listrubros': // /lista los rubros   ->   showRubros()
             // instanciando un objeto de la clase RubroController
+        //    $controller = new ItemController();
+          //  $controller->showItems();
            
         break;
         case 'productos_por_rubros': // /lista productos por rubro /n  ->   showRubrosPOrRubro()
             // instanciando un objeto de la clase RubroController
+          //  $controller = new ProductController();            
+          //  $controller->showProductsByItem($parametros[1]);
+                    
             
-            
-           
         break;
         case 'verproducto': // /ver el detalle de un producto/n  ->   ViewProduct()
                       
-           
+          //  $controller = new ProductController();            
+           // $controller->ViewProduct($parametros[1]);
             
         break;
+        default: 'listar'; break;
+    }
