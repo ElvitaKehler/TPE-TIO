@@ -50,13 +50,13 @@
         break;
 
         case 'altaItem':  //Alta a nuevo rubro
-           
+          echo "Doy de alta el Item"; 
            
         break;
 
 
          default: 
-        
+          echo "Error de enrutamiento";
             
         break;
     }
