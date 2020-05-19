@@ -20,13 +20,15 @@
             
         break;
         case 'listar': // /lista los productos   ->   showProd()
-            // instanciando un objeto de la clase ProdController
-            
+            // instanciando un objeto de la clase ProdController               
+                $controller = new ProductController();
+                $controller->showProducts();           
         break;
 
         case 'listrubros': // /lista los rubros   ->   showRubros()
             // instanciando un objeto de la clase RubroController
-           
+            $controller = new ItemController();
+            $controller->showItems();
         break;
         case 'productos_por_rubros': // /lista productos por rubro /n  ->   showRubrosPOrRubro()
             // instanciando un objeto de la clase RubroController
