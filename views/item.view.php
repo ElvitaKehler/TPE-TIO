@@ -1,5 +1,5 @@
 <?php
-//require_once('libs/Smarty.class.php');
+require_once('libs/Smarty.class.php');
 
 class ItemView
 {
@@ -11,7 +11,7 @@ class ItemView
         $smarty->assign("base_url", BASE_URL);
         $smarty->assign("listarubros", $rubros);
        
-       // $smarty->display('items.tpl');
+        $smarty->display('items.tpl');
     }
 
 

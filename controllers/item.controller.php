@@ -1,7 +1,7 @@
 <?php
 
 //require_once 'models/item.model.php';
-//require_once 'views/item.view.php';
+require_once 'views/item.view.php';
 
 
 class ItemController {
@@ -15,10 +15,11 @@ class ItemController {
     }
    
     public function showItems(){
+      echo 'Muestra lista de rubros';
 
       //  $rubros=$this->model->getItems();
        
-        // actualizo la vista
+        //actualizo la vista
         //$this->view->items($rubros);
     }
 
