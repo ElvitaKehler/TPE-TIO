@@ -1,7 +1,7 @@
 <?php
-//require_once 'models/product.model.php';
-//require_once 'views/product.view.php';
-//require_once 'models/item.model.php';
+require_once 'models/product.model.php';
+require_once 'views/product.view.php';
+require_once 'models/item.model.php';
 
 class ProductController {
 

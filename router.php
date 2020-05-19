@@ -24,9 +24,14 @@
         
         case 'listar': // /lista los productos   ->   showProd()
             // instanciando un objeto de la clase ProdController               
+<<<<<<< HEAD
              //   $controller = new ProductController();
               //  $controller->showProducts();       
               echo 'Muestra la Lista de productos';    
+=======
+                $controller = new ProductController();
+                $controller->showProducts();           
+>>>>>>> origin
         break;
 
         case 'listrubros': // /lista los rubros   ->   showRubros()
@@ -43,7 +48,26 @@
            
             
         break;        
+<<<<<<< HEAD
        
+=======
+        case 'admin':   //ACCESO PARA EL ADMINISTRADOR
+
+                //MUESTRA LOS FORMULARIOS
+        break;
+
+        case 'altaprod':    //Alta a nuevo producto
+           
+           
+        break;
+
+        case 'altaItem':  //Alta a nuevo rubro
+          echo "Doy de alta el Item"; 
+           
+        break;
+
+
+>>>>>>> origin
          default: 
           echo "Error de enrutamiento";
             
