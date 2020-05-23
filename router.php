@@ -29,14 +29,37 @@
         break;
 
         case 'listrubros': // /lista los rubros   ->   showRubros()
-            // instanciando un objeto de la clase ItemController
-
+            // instanciando un objeto de la clase RubroController
             $controller = new ItemController();
             $controller->showItems();
         break;
+        case 'productos_por_rubros': // /lista productos por rubro /n  ->   showRubrosPOrRubro()
+            // instanciando un objeto de la clase RubroController
+            
+            
+           
+        break;
+           
+            
+        break; 
+               
+        case 'admin':   //ACCESO PARA EL ADMINISTRADOR
 
-                      
-        default: 
+                //MUESTRA LOS FORMULARIOS
+        break;
+
+        case 'altaprod':    //Alta a nuevo producto
+           
+           
+        break;
+
+        case 'altaItem':  //Alta a nuevo rubro
+          echo "Doy de alta el Item"; 
+           
+        break;
+
+
+         default: 
           echo "Error de enrutamiento";
             
         break;
