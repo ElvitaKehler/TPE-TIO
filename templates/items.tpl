@@ -11,7 +11,11 @@
         </tr>
         
         </table>
+<<<<<<< HEAD
         
+=======
+       
+>>>>>>> 7fc8c32b24c20f186d63eb4c523d874f1eca76e7
 <table class='table table-hover table-striped table-bordered table table-condensed' style='width:400px'>
       
        <tr style='color:blue'><th scope='col'>RUBRO</th>

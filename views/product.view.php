@@ -21,12 +21,16 @@ class ProductView {
         $smarty = new Smarty();
         $smarty->assign("base_url", BASE_URL);
         $smarty->assign("listProductsByItem", $productos);
+<<<<<<< HEAD
         
+=======
+>>>>>>> 7fc8c32b24c20f186d63eb4c523d874f1eca76e7
 
         $smarty->display('showProductRubros.tpl');
         
     }
     
+<<<<<<< HEAD
     public function ViewOne($id){ 
     
         $smarty = new Smarty();
@@ -39,5 +43,7 @@ class ProductView {
     }
 
  
+=======
+>>>>>>> 7fc8c32b24c20f186d63eb4c523d874f1eca76e7
    
 }
