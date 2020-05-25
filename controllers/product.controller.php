@@ -5,14 +5,14 @@ require_once 'models/item.model.php';
 
 class ProductController {
 
- /*   private $model;
+    private $model;
     private $view;
-    private $modelItem;
+    
     public function __construct() {
         $this->model = new ProductModel();
         $this->view = new ProductView();
-        $this->modelItem = new ItemModel();
-    }*/
+       
+    }
 
     public function  showProducts(){
         // pido las tareas al MODELO
@@ -30,5 +30,12 @@ class ProductController {
        
         // actualizo la vista
         $this->view->showProductRubros($productos);
+    }
+    public function ViewProduct($id){
+        
+        $producto=$this->model->getone($id);
+       
+        // actualizo la vista
+        $this->view->ViewOne($producto);
     }
 }

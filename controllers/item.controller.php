@@ -1,26 +1,26 @@
 <?php
 
-//require_once 'models/item.model.php';
+require_once 'models/item.model.php';
 require_once 'views/item.view.php';
 
 
 class ItemController {
 
-   // private $model;
+    private $model;
     private $view;
 
     public function __construct() {
-     //   $this->model = new ItemModel();
-     //   $this->view = new ItemView();
+       $this->model = new ItemModel();
+        $this->view = new ItemView();
     }
    
     public function showItems(){
-      echo 'Muestra lista de rubros';
+     
 
-      //  $rubros=$this->model->getItems();
+        $rubros=$this->model->getItems();
        
         //actualizo la vista
-        //$this->view->items($rubros);
+        $this->view->items($rubros);
     }
 
     

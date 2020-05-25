@@ -48,6 +48,22 @@ class ProductModel {
         
         return $productos;
     } 
+    public function getone($id){
+        
+      
+        $db = $this->createConection(); // 1. abro la conexión con MySQL 
+
+
+        //Creamos la consulta para obtener una categoria
+        $sentencia = $db->prepare("SELECT productos.id_producto, productos.nombre, productos.marca, productos.precio,rubros.id_rubro, rubros.nombre as rubro
+        FROM productos INNER JOIN rubros ON rubros.id_rubro=productos.id_rubro WHERE productos.id_producto=? ORDER BY productos.nombre ASC "); // prepara la consulta
+
+        $sentencia->execute([$id]); // ejecuta -
+        $producto = $sentencia->fetchAll(PDO::FETCH_OBJ); // obtiene la respuesta
+        
+     
+        return $producto;
+    }
 }
 
 
